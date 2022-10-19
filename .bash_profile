@@ -1,0 +1,13 @@
+alias composer="./shell-scripts/composer.sh";
+alias php="./shell-scripts/php.sh";
+alias artisan="./shell-scripts/artisan.sh";
+alias dump="composer dump-autoload";
+alias fresh="artisan migrate:fresh $@";
+alias fseed="artisan migrate:fresh --seed $@";
+alias routes="artisan route:list --columns=method,uri,middleware";
+alias up="docker-compose up -d";
+alias down="docker-compose down";
+alias lsc="docker container ls -a";
+alias lsi="docker image ls -a";
+alias prunec="docker container prune";
+alias prunei="docker image prune";
